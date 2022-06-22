@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700;900&display=swap');
+
+// Fonts
+$logo_font: 'IBM Plex Sans Arabic', sans-serif;
+$main_font: 'Inconsolata', monospace;
+
+// Font Sizes
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$black: 900;
+
+// Media Query Sizes
+$phone: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+// Colors
+$primary: #ff4e00;
+$secondary: #5463FF;
+$terciary: #FFC300;
+$light-grey: #dfdfdf;
+$grey: #454546;
+$black: #1d1d1d;
+$white: #fff;
+
+
+$separation: 5rem;
+

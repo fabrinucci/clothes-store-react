@@ -1,0 +1,72 @@
+.btn {
+  cursor: pointer;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.3rem;
+  text-align: center;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include tablet {
+    padding: 1.5rem 2.5rem;
+  }
+}
+
+.btn-slide {
+  position: relative;
+  border: 2px solid $primary;
+  background-color: transparent;
+  color: $white;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  font-weight: $bold;
+  font-size: 1.3rem;
+  padding: .8rem 2rem;
+  transition: .3s;
+  z-index: 1;
+
+  @include phone {
+    padding: 1.2rem 3rem;
+    font-size: 1.6rem;
+  }
+
+  &::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: lighten($primary, 10);
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+  }
+
+  &:hover::before {
+    width: 105%;
+  }
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-header {
+  background-color: $white;
+  border: 1px solid $grey;
+  transition: background-color .3s ease-in;
+
+  &:hover {
+    background-color: darken($white, 10);
+  }
+}
+
